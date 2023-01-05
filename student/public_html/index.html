@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header text-center">
+                <h2>Student form using the JPDB API</h2>
+            </div>
+            <form id="stdform" method="get">
+                <div class="form-group">
+                    <label> student id:</label>
+                    <input type="text" id="stdId" class="form-control" onchange="getStd()">
+                </div>
+                <div class="form-group">
+                    <label> Student Name:</label>
+                    <input type="text" id="stdName" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label> Student Class:</label>
+                    <input type="text" id="stdClass" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label> Student Birth date:</label>
+                    <input type="date" id="stddob" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label> Student address:</label>
+                    <input type="text" id="stdaddress" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label> Student enrollment date:</label>
+                    <input type="date" id="stdedate" class="form-control">
+                </div>
+                <button type="button" class="btn btn-primary" id="stdSave"
+                        onclick="saveData()" disabled>save</button>
+                <button type="button" class="btn btn-primary" id="stdupdate"
+                        onclick="updateData()" disabled>update</button>
+                <button type="button" class="btn btn-primary" id="stdreset"
+                        onclick="resetData()" disabled>reset</button>
+            </form>
+        </div>
+
+        <script src="index.js">
+        </script>
+        
+
+    </body>
+</html>
